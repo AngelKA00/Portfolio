@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/cb2f9d3842.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!--HEADER SECTION-->
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images logo.jpg" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                
+                <div class="header-text">
+                    
+                    <h1>Hi, I'm Kanmani Angel</h1>
+                    <p>Rookie Web Developer</p>
+                    <img src="profiles.webp" class="photo">
+                </div>
+                <br><br>
+                <a href="Kanmani Angel - Resume.pdf" download class="btn" target="_blank">Download CV</a>
+            </div>
+
+        </div>
+        <!--ABOUT SECTION-->
+        <div id="about">
+            <div class="contaier">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="about.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="subtitle">About Me</h1>
+                        <p>Hello World! I'm Kanmani Angel, a rookie Web Developer based out of India .
+                            From writing programs for addition operation to writing programs for website production,
+                            my coding skills has improved a little bit due to my passion towards web development.
+                            With this enthusiasm, I would like to upskill myself in the path of web development and 
+                            also to achieve my dream as a successful Web Developer.
+                            
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            
+                        </div>
+                        <div class="tab-contents active-tab" id="education">
+                            <ul>
+                                <li><span>2021 - Dr.Sivanthi Aditanar College of Engineering</span><br>B.E Graduate with 7.5 CGP</li>
+                                <li><span>2017 - BMC Matric School</span><br>HSC Graduate with 7.6 CGP</li>
+                                <li><span>2015 - BMC Matric School</span><br>SSC Graduate with 9.6 CGP</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Apr 2022 to May 2023 - Wipro Technologies</span><br>Worked in Compliance and PMO Team</li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Skills section-->
+        <div id="skills">
+            <div class="container">
+                <h1 class="subtitle">My Skills</h1>
+                <div class="skills-list">
+                    <div>
+                        <img src="html.png" alt="">
+                        <img src="css.png" alt="">
+                        <img src="javascript.png" alt="">
+                        <img src="bootstrap.png" alt="">
+                        <!--<img src="angularjs.png" alt="">-->
+                        <img src="java.png" alt="">
+                        <img src="php.png" alt="">
+                        <img src="sql.png" alt="">
+                        <img src="c-programming.png" alt="">
+                        <img src="ms-excel.png" alt="">
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-file-circle-check"></i>
+                        <h2>View all certificates</h2>
+                        <p>View all verified certificates here...</p>
+                        <a href="skills.html" class="btn" target="_blank">Click here</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------------projects------------>
+        <div id="projects">
+            <div class="container">
+                <h1 class="subtitle">My Projects</h1>
+                <div class="work-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Bangtan Sonyeondan</h2>
+                        <p>The webpage of BTS.</p>
+                        <p>Tech used : HTML & CSS</p>
+                        <a href="Entertainment Projects/BTS/index.html" 
+                            class="btn" target="_blank">Click here to view
+                        </a>
+                    </div>
+                    
+                    <div>            
+                        <i class="fa-solid fa-code"></i>          
+                        <h2>SHINEe</h2>
+                        <p>The webpage of Shinee.</p>
+                        <p>Tech used : HTML & CSS</p>
+                        <a href="angelka00.github.io/SHINEe/"
+                            class="btn" target="_blank">Click here
+                        </a>
+                    </div>
+                    <div>            
+                        <i class="fa-solid fa-code"></i>          
+                        <h2>More Projects</h2>
+                        <p>Explore more projects here..</p>
+                        <a href="projects.html"
+                            class="btn" target="_blank">Click here
+                        </a>
+                    </div>
+                </div>
+            </div>
+        
+        <!------------internship------------>
+        <div class="container">
+            <h1 class="subtitle">Internships (Virtual)</h1>
+            
+            <div class="work-list">
+                <ul>
+                    <li><span> <a href="Siyaara Evolutions.png" target="_blank"> Siyaraa Evolutions </a></span><br>Understod web development by completing assigned tasks during internship period.</li>
+
+                    <li><span> <a href="Accenture North America - Project Management Virtual Experience completion certificate from Forage.pdf" target="_blank"> Accenture North America </a></span>( <span>via Forage</span> )<br>Understood the approaches and importance of communication in project management.</li>
+
+                    <li><span> <a href="Datacom - Software Development Virtual Experience.pdf" target="_blank"> Datacom </a></span>( <span>via Forage</span> )<br>Understood the software review and root cause in fixing bugs in software development.</li>
+
+                    <li><span> <a href="Moreton Bay Regional Council - Web Development Virtual Experience Program.pdf" target="_blank"> Moreton Bay Regional Council </a></span>( <span>via Forage</span> )<br>Understood the overall website Planning methods in web development.</li>
+                </ul>
+            </div>
+        </div>
+        <!---------contact section---------->
+        <section class="footer">
+            <div class="contact" id="contact">
+                <h1>Connect With Me</h1>
+                <a href="mailto:angel.jayam@gmail.com" class="fa-solid fa-envelope"></a>
+                <a href="https://github.com/AngelKA00" class="fa-brands fa-github"></a>
+                <a href="https://www.linkedin.com/in/kanmani-angel-s-2156691b2/" class="fa-brands fa-linkedin"></a>
+                
+            </div>
+            <div class="copyright">Copyright &copy; Kanmani Angel <i class="fa-solid fa-heart"></i></div>
+          </section>
+          <!--
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="subtitle">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i>angel.jayam@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>+91 9514409448</p>
+                        <div class="social-icons">
+                            <p><a href="https://github.com/AngelKA00" target="_blank">
+                                <i class="fa-brands fa-github"></i></a>Github Account
+                            </p>
+                            <p><a href="https://www.linkedin.com/in/kanmani-angel-s-2156691b2/" target="_blank">
+                                <i class="fa-brands fa-linkedin"></i></a>Linkedin
+                            </p>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright &copy; Kanmani Angel <i class="fa-solid fa-heart"></i></p>
+            </div>
+        </div>-->
+        <script src="script.js"></script>
+    </body>
+</html>

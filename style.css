@@ -1,0 +1,402 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Calibri ;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: #fff;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+
+}
+.container{
+    padding: 10px 5%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 140px;
+    
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    background-color: #bd08ff;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.photo{
+    width: 500px;
+    position: absolute;
+    left: 55%;
+    top: 20%;
+    border-radius: 50%;
+    box-shadow: 0px 5px 5px;
+    color: #bd08ff;
+}
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+    color: #bd08ff;
+}
+.header-text h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 50px;
+    text-shadow: 0px 5px 3px #bd08ff;
+    color: white;
+}
+/*-------------about section---------------*/
+#about{
+    padding: 80px ;
+    color: #ababab;
+}
+.row{
+    display: flex; /*side by side*/
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;/*width of the col will be that given percent*/
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;/*width of the col will be that given percent*/
+}
+.subtitle{
+    font-size: 60px;
+    color: white;
+    font-weight: 600;
+}
+/*------for 3 cols inside about me section-------*/
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+    cursor: pointer;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #bd08ff;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 100%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: #bd08ff;
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+/*------services section-------*/
+#skills{
+    padding: 30px 0;
+}
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 70px;
+    margin-top: 40px;
+    padding: 40px;
+}
+.skills-list div{
+    background-color: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background-color 0.5s, transform 0.5s;
+}
+.skills-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.skills-list div h2{
+    font-size: 30px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+.skills-list div h2 span{
+    font-size: 30px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    color: #bd08ff;
+}
+.skills-list div p{
+    font-size: 15px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+.skills-list div a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.skills-list div:hover{
+    background-color: #dbdbdb;
+    transform: translateY(-10px);
+    color: #bd08ff;
+    cursor: pointer;
+}
+/*----------portfolio projects section--------*/
+#portfolio{
+    padding: 50px 0;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work-list div{
+    background-color: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background-color 0.5s, transform 0.5s;
+}
+.work-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.work-list div h2{
+    font-size: 30px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+.work-list div h3{
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+.work-list div p{
+    font-size: 15px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+.work-list div a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.work-list div:hover{
+    background-color: #dbdbdb;
+    transform: translateY(-10px);
+    color: #bd08ff;
+    cursor: pointer;
+}
+/*------------internship section--------*/
+.work-list li{
+    font-size: 18px;
+    list-style: none;
+    padding: 10px;
+    margin: 10px;
+}
+.work-list li a{
+    text-decoration: none;
+    color: #bd08ff;
+}
+
+.work-list li span{
+    color: #bd08ff;
+    font-size: 20px;
+}
+/*--------contact me section--------*/
+.footer{
+    background-color: #262626;
+    text-align: center;
+}
+.footer .contact{
+    padding: 10px;
+}
+.footer .contact h1{
+    padding: 10px;
+    font-size: 40px;
+    
+}
+.footer .contact a{
+    height: 18px;
+    width: 18px;
+    font-size: 40px;
+    color: #bd08ff;
+    text-decoration: none;
+    margin: 30px;
+}
+.footer .contact a:hover{
+    color: white;
+}
+.footer .copyright{
+    font-size: 20px;
+    padding: 20px;
+}
+.footer .copyright i{
+    color: purple;
+}
+.btn{
+    display: block;
+    margin: 5px ;
+    width: fit-content;
+    border: 1px solid #bd08ff;
+    padding: 14px ;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    transition: #bd08ff 0.5s;
+}
+.btn:hover{
+    background-color: #bd08ff;
+}
+
+
+/*-------My Projects html page-------*/
+.projects-title{
+    font-size: 50px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+.projects-subtitle{
+    padding: 10px;
+    font-size: 40px;
+    color: #bd08ff;
+}
+.projects-work-list{
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    background-color:black;
+}
+.projects-work-list button{
+    padding: 20px;
+    margin: 10px;
+    line-height: 1px;
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 10px;
+    background-color: #262626;
+}
+.projects-work-list a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+.projects-work-list a:hover{
+    color: white;
+}
+.projects-work-list button:hover{
+    background-color: #bd08ff;
+    color: white;
+}
+/*-------My skills html page-------*/
+.courses-subtitle{
+    padding: 20px;
+    font-size: 60px;
+    text-align: center;
+}
+
+/*-----------media queries-----------*/
+
+nav .fa-solid{
+    display: none;
+}
+@media only screen and (max-width:600px) {
+    .photo{
+        display: none;
+        /*
+        width: 150px;
+        position: absolute;
+        left: 55%;
+        top: 20%;
+        border-radius: 50%;
+        box-shadow: 0px 5px 5px;
+        color: #bd08ff;*/
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        background-color: #bd08ff;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .subtitle{
+        font-size: 40px;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+}
